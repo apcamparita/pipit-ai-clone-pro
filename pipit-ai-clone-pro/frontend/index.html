@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pipit AI Clone Pro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <h1>🔥 Pipit AI Clone</h1>
+
+  <input type="file" id="photo" accept="image/*">
+  <input type="file" id="audio" accept="audio/*">
+
+  <audio id="preview" controls></audio>
+
+  <textarea id="prompt" placeholder="Enter animation style prompt..."></textarea>
+
+  <button onclick="generateVideo()">Generate Video</button>
+
+  <div id="loading" class="hidden">⏳ Processing AI Video...</div>
+
+  <video id="video" controls></video>
+
+  <a id="download" download="pipit-ai.mp4">Download Video</a>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
